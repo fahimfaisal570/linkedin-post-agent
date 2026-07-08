@@ -1,0 +1,18 @@
+# Python virtual envs
+.venv/
+venv/
+ENV/
+
+# Streamlit config / cache
+.streamlit/
+
+# Environment files containing API keys
+.env
+
+# Pycache
+__pycache__/
+*.pyc
+
+# Local IDE config
+.vscode/
+.idea/
