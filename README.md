@@ -9,6 +9,7 @@ This agent takes a topic, language, and tone to generate structured, engaging, 2
 - **`requirements.txt`**: List of dependencies (`langchain`, `langchain-google-genai`, `streamlit`, `python-dotenv`).
 - **`.env.example`**: Template for setting up environment variables.
 - **`.gitignore`**: Files ignored by Git (such as virtual environments and your private `.env` secrets file).
+- **`demo_recording.mp4`**: Compressed demo video showing the application in action.
 
 ---
 
@@ -44,6 +45,4 @@ This agent takes a topic, language, and tone to generate structured, engaging, 2
 ---
 
 ## Demo Video
-Due to GitHub's file size limit (100MB), the **`screen recording.mp4`** file cannot be uploaded directly to this repository. 
-
-Please find the demo video submitted directly in the assignment portal alongside this repository link.
+You can watch the demo video file `demo_recording.mp4` included directly inside the repository!
