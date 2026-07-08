@@ -2,20 +2,21 @@
 
 An AI-powered LinkedIn post generator built with **LangChain**, **Google Gemini (free tier API)**, and **Streamlit**.
 
-This agent helps you generate highly engaging, structured LinkedIn-style posts (2-4 paragraphs) on any topic and in your selected language.
+This agent takes a topic, language, and tone to generate structured, engaging, 2-4 paragraph professional LinkedIn posts.
 
-## Features
-- **Topic Input:** Provide any topic (e.g., "AI in Healthcare", "Remote Work Productivity").
-- **Language Selection:** Generate posts in English, Bengali, Spanish, Hindi, and more.
-- **Modern UI:** Clean, beautiful Streamlit interface with responsive status updates and quick-copy output.
-- **LangChain Integration:** Uses a structured LLM chain for prompt management, LLM interfacing, and output parsing.
-- **Powered by Gemini:** Uses `gemini-2.0-flash` through Google AI Studio (free API key).
+## Repository Contents
+- **`app.py`**: The main application code containing the Streamlit UI design, input forms, and LangChain orchestration.
+- **`requirements.txt`**: List of dependencies (`langchain`, `langchain-google-genai`, `streamlit`, `python-dotenv`).
+- **`.env.example`**: Template for setting up environment variables.
+- **`.gitignore`**: Files ignored by Git (such as virtual environments and your private `.env` secrets file).
 
-## Setup Instructions
+---
+
+## How to Set Up and Run the App
 
 1. **Clone the repository:**
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/fahimfaisal570/linkedin-post-agent.git
    cd linkedin-post-agent
    ```
 
@@ -24,24 +25,25 @@ This agent helps you generate highly engaging, structured LinkedIn-style posts (
    pip install -r requirements.txt
    ```
 
-3. **Set up API Key:**
+3. **Configure the API Key:**
    - Create a `.env` file in the root directory:
      ```bash
      cp .env.example .env
      ```
-   - Get a free Gemini API key from [Google AI Studio](https://aistudio.google.com/apikey).
-   - Paste your key into the `.env` file:
+   - Open `.env` and add your Gemini API key:
      ```env
-     GOOGLE_API_KEY=your_actual_api_key_here
+     GOOGLE_API_KEY=your_gemini_api_key_here
      ```
 
-4. **Run the Streamlit application:**
+4. **Launch the Web App:**
    ```bash
    streamlit run app.py
    ```
+   This will automatically open the app in your browser at `http://localhost:8501`.
 
-## Tech Stack
-- **Framework:** Streamlit (UI)
-- **AI Orchestration:** LangChain
-- **LLM Provider:** Google Generative AI (`gemini-2.0-flash`)
-- **Environment Management:** python-dotenv
+---
+
+## Demo Video
+Due to GitHub's file size limit (100MB), the **`screen recording.mp4`** file cannot be uploaded directly to this repository. 
+
+Please find the demo video submitted directly in the assignment portal alongside this repository link.
